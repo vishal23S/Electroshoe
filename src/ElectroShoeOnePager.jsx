@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
-// ElectroShoe: The Idea That Refused to Die
-// Clean, minimalist layout with section subtitles for clarity.
+import TechDiagram from "/images/Tech.png";
 
 export default function ElectroShoeOnePager() {
   const [revealStep, setRevealStep] = useState(0);
@@ -13,7 +11,7 @@ export default function ElectroShoeOnePager() {
   }, []);
 
   const SectionTitle = ({ title, subtitle }) => (
-    <div className="mb-6">
+    <div className="mb-6 text-left">
       <h2 className="text-xl font-semibold text-[#1c1c1c] 
 mb-1">{title}</h2>
       <p className="text-sm text-[#5b5b5b]">{subtitle}</p>
@@ -21,42 +19,55 @@ mb-1">{title}</h2>
   );
 
   return (
-    <div className="min-h-screen bg-[#f8f7f4] text-[#2f3437] font-sans 
-antialiased">
+    <div
+      className="min-h-screen text-[#2f3437] font-sans antialiased"
+      style={{
+        backgroundColor: '#f9f8f6',
+        backgroundImage:`linear-gradient(rgba(0,0,0,0.02) 1px, transparent 
+1px), 
+linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px)`,
+        backgroundSize: '40px 40px',
+        backgroundAttachment: 'fixed',
+      }}
+    >
       <div className="max-w-3xl mx-auto px-6 py-20">
         <header className="flex items-center justify-between mb-12">
           <div>
-            <div className="text-sm text-[#4b4b4b]">ElectroShoe</div>
-            <div className="text-xs text-[#777]">by Siddharth 
-Mandala</div>
+            <div className="text-sm text-[#4b4b4b]">Electroshoe</div>
           </div>
           <nav className="text-sm text-[#777] flex gap-6">
-            <a href="#story" className="hover:text-black">Story</a>
-            <a href="#tech" className="hover:text-black">Tech</a>
-            <a href="#law" className="hover:text-black">Law</a>
-            <a href="#impact" className="hover:text-black">Impact</a>
-            <a href="#future" className="hover:text-black">Future</a>
-            <a href="#contact" className="hover:text-black">Contact</a>
+            <a href="#story" className="hover:text-black transition-colors 
+duration-200">Story</a>
+            <a href="#tech" className="hover:text-black transition-colors 
+duration-200">Tech</a>
+            <a href="#law" className="hover:text-black transition-colors 
+duration-200">Law</a>
+            <a href="#impact" className="hover:text-black 
+transition-colors duration-200">Impact</a>
+            <a href="#future" className="hover:text-black 
+transition-colors duration-200">Future</a>
+            <a href="#contact" className="hover:text-black 
+transition-colors duration-200">Contact</a>
           </nav>
         </header>
 
         {/* Hero */}
-        <main className="mb-16 text-center">
+        <main className="mb-16 text-left">
           <h1 className="text-3xl md:text-4xl font-semibold tracking-tight 
-mb-4 text-[#1c1c1c]">ElectroShoe: The Idea That Refused to Die</h1>
-          <p className="text-lg text-[#3a3a3a] mb-6 max-w-xl mx-auto">A 
-story of invention that ran faster than the law: a founder who chose 
-strategic dormancy over premature release.</p>
-          <p className="text-sm text-[#6b6b6b] max-w-md mx-auto">Built for 
+mb-4 text-[#1c1c1c]">Electroshoe: The Idea That Refused to Die</h1>
+          <p className="text-lg text-[#3a3a3a] mb-6 max-w-xl">A story of 
+invention that ran faster than the law: a founder who chose strategic 
+dormancy over premature release.</p>
+          <p className="text-sm text-[#6b6b6b] max-w-md">Built for 
 protection: Waiting for its moment.</p>
         </main>
 
         {/* Story */}
-        <section id="story" className="mb-16">
+        <section id="story" className="mb-16 text-left">
           <SectionTitle title="The Beginning" subtitle="How the idea of 
-ElectroShoe was born from necessity and conviction." />
+Electroshoe was born from necessity and conviction." />
           <p className="text-sm text-[#2f3437] leading-relaxed mb-4">I 
-built ElectroShoe as a teenager: angry, driven, and unwilling to accept 
+built Electroshoe as a teenager: angry, driven, and unwilling to accept 
 that fear was normal for women in public spaces. The idea was radical but 
 simple: convert motion into defence. Each step generated charge; the shoe 
 stored it, then discharged it on impact to deter an attacker. A loop of 
@@ -69,9 +80,18 @@ by the system it threatens.</p>
         </section>
 
         {/* Tech */}
-        <section id="tech" className="mb-16">
+        <section id="tech" className="mb-16 text-left">
           <SectionTitle title="Engineering the Edge" subtitle="The science 
 and circuitry behind self-charging defence footwear." />
+          {/* Inserted diagram above the first tech paragraph */}
+          <div className="flex justify-center mb-6">
+           <img
+             src={TechDiagram}
+             alt="Engineering the Edge diagram"
+             className="rounded-lg shadow-md border border-[#e0e0e0] 
+w-[70%] md:w-[60%] lg:w-[50%]"
+            />
+          </div>
           <p className="text-sm text-[#2f3437] leading-relaxed mb-3">The 
 architecture combined a piezoelectric energy harvesting array, 
 high-voltage step-up circuitry, and accelerometer-driven impact detection. 
@@ -90,7 +110,7 @@ governance.</p>
         </section>
 
         {/* Law */}
-        <section id="law" className="mb-16">
+        <section id="law" className="mb-16 text-left">
           <SectionTitle title="Law, Regulation & Reality" subtitle="Where 
 innovation collided with the legal framework of India’s Arms Act." />
           <p className="text-sm text-[#2f3437] leading-relaxed mb-3">The 
@@ -116,11 +136,11 @@ to preserve its potential until legality and safety could coexist.</p>
         </section>
 
         {/* Impact */}
-        <section id="impact" className="mb-16">
+        <section id="impact" className="mb-16 text-left">
           <SectionTitle title="Impact" subtitle="The reach and resonance 
 of a prototype that became a global movement." />
           <p className="text-sm text-[#2f3437] 
-leading-relaxed">ElectroShoe resonated far beyond its prototype. The 
+leading-relaxed">Electroshoe resonated far beyond its prototype. The 
 project reached more than 20 million shares across the internet, inspiring 
 global dialogue about women’s safety and innovation. Two schoolgirls in 
 Pakistan built their own version after discovering the concept, proving 
@@ -131,11 +151,11 @@ validation that technological intent can inspire cultural movement.</p>
         </section>
 
         {/* Future */}
-        <section id="future" className="mb-16">
-          <SectionTitle title="The Future" subtitle="Where ElectroShoe 
+        <section id="future" className="mb-16 text-left">
+          <SectionTitle title="The Future" subtitle="Where Electroshoe 
 fits into the next generation of predictive and defence tech." />
           <p className="text-sm text-[#2f3437] leading-relaxed 
-mb-3">ElectroShoe didn’t fail; it exposed a gap between innovation and 
+mb-3">Electroshoe didn’t fail; it exposed a gap between innovation and 
 governance. It revealed how technology that protects can also challenge 
 existing definitions of power and safety.</p>
           <p className="text-sm text-[#2f3437] leading-relaxed mb-3">Right 
@@ -147,17 +167,19 @@ and systems designed to reduce response time in crisis scenarios. I’m
 learning what it takes to align technology with state-scale impact: legal 
 clarity, institutional cooperation, and scalable design.</p>
           <p className="text-sm text-[#2f3437] leading-relaxed mb-3">When 
-ElectroShoe returns, it will come back through the right gates—with 
+Electroshoe returns, it will come back through the right gates—with 
 compliance, medical validation, and state partnership. The next version 
 won’t fight the law: it will be built with it. It will not be a product; 
 it will be <em>infrastructure</em>.</p>
-          <p className="text-sm text-[#2f3437] italic">Some ideas are not 
-dead: they are waiting for the world to evolve.</p>
+          <p className="text-sm text-[#2f3437] italic mb-2">Some ideas are 
+not dead: they are waiting for the world to evolve.</p>
+          <p className="text-sm text-[#2f3437] italic">— Siddharth 
+Mandala</p>
         </section>
 
         {/* Contact */}
         <section id="contact" className="pt-10 border-t border-[#e5e5e5] 
-text-center">
+text-left">
           <SectionTitle title="Contact" subtitle="Reach out for 
 collaborations or strategic partnerships." />
           <p className="text-sm text-[#2f3437]">For collaborations, 
@@ -171,8 +193,8 @@ target="_blank" rel="noreferrer" className="underline">Medium: Tech
 Startup Culture</a></p>
         </section>
 
-        <footer className="pt-6 text-center text-xs text-[#7a7a7a]">
-          <div>© {new Date().getFullYear()} ElectroShoe: The Idea That 
+        <footer className="pt-6 text-left text-xs text-[#7a7a7a]">
+          <div>© {new Date().getFullYear()} Electroshoe: The Idea That 
 Refused to Die.</div>
         </footer>
       </div>
