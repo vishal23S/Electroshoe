@@ -34,20 +34,23 @@ linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px)`,
           <div>
             <div className="text-sm text-[#4b4b4b]">Electroshoe</div>
           </div>
-          <nav className="text-sm text-[#777] flex gap-6">
-            <a href="#story" className="hover:text-black transition-colors 
+          <nav
+  	  className="text-sm text-[#777] flex flex-wrap justify-end gap-4 
+sm:gap-6 w-full sm:w-auto mt-4 sm:mt-0">
+  	   <a href="#story" className="hover:text-black transition-colors 
 duration-200">Story</a>
-            <a href="#tech" className="hover:text-black transition-colors 
+  	   <a href="#tech" className="hover:text-black transition-colors 
 duration-200">Tech</a>
-            <a href="#law" className="hover:text-black transition-colors 
+  	   <a href="#law" className="hover:text-black transition-colors 
 duration-200">Law</a>
-            <a href="#impact" className="hover:text-black 
-transition-colors duration-200">Impact</a>
-            <a href="#future" className="hover:text-black 
-transition-colors duration-200">Future</a>
-            <a href="#contact" className="hover:text-black 
-transition-colors duration-200">Contact</a>
-          </nav>
+  	   <a href="#impact" className="hover:text-black transition-colors 
+duration-200">Impact</a>
+  	   <a href="#future" className="hover:text-black transition-colors 
+duration-200">Future</a>
+  	   <a href="#contact" className="hover:text-black 
+transition-colors 
+duration-200">Contact</a>
+	  </nav>
         </header>
 
         {/* Hero */}
