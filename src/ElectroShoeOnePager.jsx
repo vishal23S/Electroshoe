@@ -27,7 +27,6 @@ mb-1">{title}</h2>
 1px), 
 linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px)`,
         backgroundSize: '40px 40px',
-        backgroundAttachment: 'fixed',
       }}
     >
       <div className="max-w-3xl mx-auto px-6 py-20">
