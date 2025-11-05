@@ -27,37 +27,39 @@ mb-1">{title}</h2>
 1px), 
 linear-gradient(90deg, rgba(0,0,0,0.02) 1px, transparent 1px)`,
         backgroundSize: '40px 40px',
+        backgroundAttachment: 'scroll',
       }}
     >
       <div className="max-w-3xl mx-auto px-6 py-20">
-        <header className="mb-12">
-  <div className="max-w-3xl mx-auto px-4 sm:px-6">
-    {/* Row 1: logo (always) + desktop menu */}
-    <div className="flex items-center justify-between py-4">
-      <div className="text-sm text-[#4b4b4b]">Electroshoe</div>
-
-      {/* Desktop menu (inline, no wrap) */}
-      <nav className="hidden sm:flex gap-6 text-sm text-[#777]">
-        <a href="#story"  className="hover:text-black transition-colors">Story</a>
-        <a href="#tech"   className="hover:text-black transition-colors">Tech</a>
-        <a href="#law"    className="hover:text-black transition-colors">Law</a>
-        <a href="#impact" className="hover:text-black transition-colors">Impact</a>
-        <a href="#future" className="hover:text-black transition-colors">Future</a>
-        <a href="#contact"className="hover:text-black transition-colors">Contact</a>
-      </nav>
+     <header className="mb-12">
+  <div className="max-w-3xl mx-auto px-6">
+    {/* Logo */}
+    <div className="text-sm text-[#4b4b4b] text-left sm:text-left">
+      Electroshoe
     </div>
 
-    {/* Mobile menu (its own row, centered, wraps nicely) */}
-    <nav className="sm:hidden flex flex-wrap justify-center gap-x-4 gap-y-2 text-[15px] text-[#777] leading-6">
-      <a href="#story"  className="hover:text-black">Story</a>
-      <a href="#tech"   className="hover:text-black">Tech</a>
-      <a href="#law"    className="hover:text-black">Law</a>
-      <a href="#impact" className="hover:text-black">Impact</a>
-      <a href="#future" className="hover:text-black">Future</a>
-      <a href="#contact"className="hover:text-black">Contact</a>
+    {/* Desktop menu (unchanged) */}
+    <nav className="hidden sm:flex text-sm text-[#777] justify-end gap-6 mt-[-1.5rem]">
+      <a href="#story" className="hover:text-black transition-colors duration-200">Story</a>
+      <a href="#tech" className="hover:text-black transition-colors duration-200">Tech</a>
+      <a href="#law" className="hover:text-black transition-colors duration-200">Law</a>
+      <a href="#impact" className="hover:text-black transition-colors duration-200">Impact</a>
+      <a href="#future" className="hover:text-black transition-colors duration-200">Future</a>
+      <a href="#contact" className="hover:text-black transition-colors duration-200">Contact</a>
+    </nav>
+
+    {/* Mobile menu (below logo) */}
+    <nav className="flex sm:hidden flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-[#777] mt-4 sm:mt-0">
+      <a href="#story" className="hover:text-black transition-colors duration-200">Story</a>
+      <a href="#tech" className="hover:text-black transition-colors duration-200">Tech</a>
+      <a href="#law" className="hover:text-black transition-colors duration-200">Law</a>
+      <a href="#impact" className="hover:text-black transition-colors duration-200">Impact</a>
+      <a href="#future" className="hover:text-black transition-colors duration-200">Future</a>
+      <a href="#contact" className="hover:text-black transition-colors duration-200">Contact</a>
     </nav>
   </div>
 </header>
+
 
 
         {/* Hero */}
