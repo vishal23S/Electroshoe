@@ -27,22 +27,16 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install --no-optional
+        run: npm install
 
       - name: Build
         run: npm run build
-
-      - name: Clean symlinks
-        run: |
-          find dist -type l -delete || true
-          find dist -type d -empty -delete || true
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: dist
-          if-no-files-found: error
 
   deploy:
     environment:
