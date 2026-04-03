@@ -157,7 +157,7 @@ global dialogue about women’s safety and innovation. Two schoolgirls in
 Pakistan built their own version after discovering the concept, proving 
 that ideas transcend borders faster than markets. It was recognised by 
 India’s Education Minister, featured in over 300 international media 
-outlets, and shared on a TEDx stage — not as celebration, but as 
+outlets, and shared on a TEDx stage, not as celebration, but as 
 validation that technological intent can inspire cultural movement.</p>
         </section>
 
@@ -178,7 +178,7 @@ and systems designed to reduce response time in crisis scenarios. I’m
 learning what it takes to align technology with state-scale impact: legal 
 clarity, institutional cooperation, and scalable design.</p>
           <p className="text-sm text-[#2f3437] leading-relaxed mb-3">When 
-Electroshoe returns, it will come back through the right gates—with 
+Electroshoe returns, it will come back through the right gates with 
 compliance, medical validation, and state partnership. The next version 
 won’t fight the law: it will be built with it. It will not be a product; 
 it will be <em>infrastructure</em>.</p>
