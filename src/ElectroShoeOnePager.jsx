@@ -175,7 +175,7 @@ before it emerges, and on building strategic ventures that assist the
 Indian government across both defence and civilian innovation. This 
 includes research in behavioural sensing, AI-driven situational awareness, 
 and systems designed to reduce response time in crisis scenarios. I’m 
-learning what it takes to align technology with state-scale impact: legal 
+learning what it takes to align technology with nationwide impact: legal 
 clarity, institutional cooperation, and scalable design.</p>
           <p className="text-sm text-[#2f3437] leading-relaxed mb-3">When 
 Electroshoe returns, it will come back through the right gates with 
