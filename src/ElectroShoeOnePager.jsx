@@ -112,9 +112,9 @@ independent of external power.</p>
           <p className="text-sm text-[#2f3437] leading-relaxed">But every 
 electrical defence system walks a thin line between deterrence and damage. 
 Human physiology isn’t deterministic; current that disables one person can 
-harm another. Under specific cardiac conditions—particularly ventricular 
+harm another. Under specific cardiac conditions, particularly ventricular 
 fibrillation thresholds around 50–100 mA sustained for fractions of a 
-second—such current could trigger fatal arrhythmia. In other words, the 
+second, such a current could trigger fatal arrhythmia. In other words, the 
 same waveform that protects could, under the wrong biological timing, 
 kill. That risk demanded more than engineering: it demanded 
 governance.</p>
@@ -128,8 +128,8 @@ innovation collided with the legal framework of India’s Arms Act." />
 <strong>Arms Act of 1959</strong> governs weapon classification in India. 
 It explicitly recognises projectile tasers used by enforcement, but has no 
 framework for contact-based electrical defence wearables. Our current 
-iteration of the product—classified as a direct-contact electrical 
-discharge device—does not qualify for civilian ownership or commercial 
+iteration of the product, classified as a direct-contact electrical 
+discharge device, does not qualify for civilian ownership or commercial 
 sale under this act. It remains outside the permissible category of 
 non-projectile electrical deterrents, making any attempt at consumer 
 deployment legally non-compliant.</p>
